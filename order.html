@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order | Chettinad Spice</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&amp;family=Lato:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Chettinad Spice</h1>
+    <nav>
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="order">
+      <h2>Order Your <em>Favourites</em></h2>
+
+      <form id="order-form" novalidate>
+        <div class="field">
+          <label for="customer-name">Customer name</label>
+          <input type="text" id="customer-name" name="customer-name" autocomplete="name" aria-describedby="name-error">
+          <p class="field-error" id="name-error"></p>
+        </div>
+
+        <div id="order-items" class="order-rows"></div>
+        <button type="button" id="add-item" class="btn-secondary">Add Another Item</button>
+
+        <p class="order-total">Total: <strong id="order-total">₹0</strong></p>
+
+        <button type="submit">Place Demo Order</button>
+      </form>
+
+      <div id="order-confirmation" role="status" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    <address>Chettinad Spice, Karaikudi, Sivaganga District, Tamil Nadu 630001, India</address>
+    <p>&copy; 2026 Chettinad Spice. All rights reserved.</p>
+    <p>Web Design - Suren Dev</p>
+  </footer>
+
+  <script src="menu.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
